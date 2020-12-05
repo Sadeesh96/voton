@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Voton Sri Lanka</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        
+        <!-- top bar -->
+        <div class="topbar">
+            <img class="eclogo" src="images/eclogo.png">
+            <img class="eclogo" src="images/vlogo.png" style="float:right">
+        </div>
+
+        <!-- Body -->
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+
+            <div class="vercard" style="height:70%; overflow:scroll;">
+                <label for="plsvote" class="topic">Please vote for your candidate</label>
+                <div class="baltable">
+                    <table border="1px" id="sinballet" align="center" style="margin-top: 20px;">
+                        <tr>
+                            <th style="width: 40px; height: 50px;"></th>
+                            <th style="width: 300px;"><label for="candhead">Candidate Name</label></th>
+                            <th style="width: 60px;"><label for="signhead">Sign</label></th>
+                            <th style="width: 50px;"><label for="votehead">Vote</label></th>
+                        </tr>
+                        <tr>
+                            <td><label for="index">01</label></td>
+                            <td><label for="candname">Kamal Perera</label></td>
+                            <td><img src="images/Signs/bull.png"></td>
+                            <td>
+                                <div class="option-input radio" style="padding-top:0px;">
+                                    <input type="radio" class="custom-input" style="visibility: hidden;">
+                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="index">02</label></td>
+                            <td><label for="candname">Nihal Silva</label></td>
+                            <td><img src="images/Signs/cat.png"></td>
+                            <td>
+                                <div class="option-input radio" style="padding-top:0px;">
+                                    <input type="radio" class="custom-input" style="visibility: hidden;">
+                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="index">03</label></td>
+                            <td><label for="candname">Kasun Peiris</label></td>
+                            <td><img src="images/Signs/butterfly.png"></td>
+                            <td>
+                                <div class="option-input radio" style="padding-top:0px;">
+                                    <input type="radio" class="custom-input" style="visibility: hidden;">
+                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="index">04</label></td>
+                            <td><label for="candname">Namal Fernando</label></td>
+                            <td><img src="images/Signs/frog.png"></td>
+                            <td>
+                                <div class="option-input radio" style="padding-top:0px;">
+                                    <input type="radio" class="custom-input" style="visibility: hidden;">
+                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="index">05</label></td>
+                            <td><label for="candname">Kelum Soyza</label></td>
+                            <td><img src="images/Signs/rabbit.png"></td>
+                            <td>
+                                <div class="option-input radio" style="padding-top:0px;">
+                                    <input type="radio" class="custom-input" style="visibility: hidden;">
+                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="index">06</label></td>
+                            <td><label for="candname">Saman De Silva</label></td>
+                            <td><img src="images/Signs/fox.png"></td>
+                            <td>
+                                <div class="option-input radio" style="padding-top:0px;">
+                                    <input type="radio" class="custom-input" style="visibility: hidden;">
+                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="index">07</label></td>
+                            <td><label for="candname">Amal Silva</label></td>
+                            <td><img src="images/Signs/chicken.png"></td>
+                            <td>
+                                <div class="option-input radio" style="padding-top:0px;">
+                                    <input type="radio" class="custom-input" style="visibility: hidden;">
+                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="index">08</label></td>
+                            <td><label for="candname">Sunil Fernando</label></td>
+                            <td><img src="images/Signs/crab.png"></td>
+                            <td>
+                                <div class="option-input radio" style="padding-top:0px;">
+                                    <input type="radio" class="custom-input" style="visibility: hidden;">
+                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="index">09</label></td>
+                            <td><label for="candname">Vimal Perera</label></td>
+                            <td><img src="images/Signs/dog.png"></td>
+                            <td>
+                                <div class="option-input radio" style="padding-top:0px;">
+                                    <input type="radio" class="custom-input" style="visibility: hidden;">
+                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="index">10</label></td>
+                            <td><label for="candname">Nisal Soyza</label></td>
+                            <td><img src="images/Signs/mosquito.png"></td>
+                            <td>
+                                <div class="option-input radio" style="padding-top:0px;">
+                                    <input type="radio" class="custom-input" style="visibility: hidden;">
+                                </div> 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom bar -->
+        <div class="bottombar">
+            <label for="helpbtn"><button class="bottombtn"><i class="fa fa-question-circle-o"></i> Help</button></label>
+            <!-- <li style="margin-left: 20%;"><label for="backbtn"><button class="bottombtn"><i class="fa fa-arrow-circle-o-left"></i> Back</button></label> -->
+            <label for="donebtn"><button class="bottombtn" onclick=location.href="voted.html" style="float:right" > <i class="fa fa-check"></i> Done</button></label>
+            <!-- <label for="homebtn" style="float:right"><button class="bottombtn" onclick=location.href="index.html"><i class="fa fa-home"></i> Home</button></label> -->
+            <!-- <li style="float:right; margin-right: 20%;"><label for="nextbtn"><button class="bottombtn"><i class="fa fa-arrow-circle-o-right"></i> Next</button></label> -->
+        </div>
+
+        <!-- script -->
+        <script>
+            var myVar;
+            
+            function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+            }
+            
+            function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+    </body>
+    <script src="js/script.js"></script>
+
+</html>

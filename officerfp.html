@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Voton Sri Lanka</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        
+        <div class="topbar">
+            <img class="eclogo" src="images/eclogo.png">
+            <img class="eclogo" src="images/vlogo.png" style="float:right">
+        </div>
+
+        
+
+        <!-- Body -->
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <div class="displayname" style="margin-top: 5em;">
+                <label for="displayname" class="votername">Mudiyanselage John Doe Karunasena</label><br>
+                <label for="disableloginmsg" class="topic">(Disabled person login)</label>
+            </div>
+            <div class="vercard"  style="margin-top: 3em;">
+                <label for="officerfp" class="topic">Enter officer's fingerprint</label>
+                <div>
+                    <i class="material-icons" style="font-size:100px; color:rgb(0, 0, 0); margin:50px;">fingerprint</i>
+                </div>
+            </div>
+            <!-- <div>
+                <label for="disablelogin"><button class="btn2">Touch here for disable person login</button></label>
+            </div> -->
+        </div>
+
+        <!-- bottom bar -->
+        <div class="bottombar">
+            <label for="helpbtn"><button class="bottombtn"><i class="fa fa-question-circle-o"></i> Help</button></label>
+            <label for="backbtn"><button class="bottombtn" onclick=location.href="fingerprint.html"><i class="fa fa-arrow-circle-o-left"></i> Back</button></label>
+            <label for="homebtn"><button class="bottombtn" onclick=location.href="index.html" style="float:right"><i class="fa fa-home"></i> Home</button></label>
+            <!-- <li style="float:right; margin-right: 20%;"><label for="nextbtn"><button class="bottombtn"><i class="fa fa-arrow-circle-o-right"></i> Next</button></label></li> -->
+        </div>
+
+        <!-- script -->
+        <script>
+            var myVar;
+            
+            function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+            }
+            
+            function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

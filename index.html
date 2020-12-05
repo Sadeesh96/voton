@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Voton Sri Lanka</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        
+        <div class="topbar">
+            <img class="eclogo" src="images/eclogo.png">
+            <img class="eclogo" src="images/vlogo.png" style="float:right">
+        </div>
+        
+        
+
+        <!-- Body -->
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <div style="margin-top: 5em;">
+            <table style="width:100%">
+                <tr>
+                    <td class="sintopic" style="width:55%">පාර්ලිමේන්තු මැතිවරණය</td>
+                    <td class="topicyear" rowspan="3" style="width:45%">2021</td>
+                </tr>
+                <tr>
+                    <td class="tamtopic" style="width:55%">நாடாளுமன்றத் தேர்தல்</td>
+                </tr>
+                <tr>
+                    <td class="engtopic" style="width:55%">Parliamentary Election</td>
+                </tr>
+            </table>
+            </div>
+        
+            <div class="langcard">
+                <label for="lang" class="topic">භාෂාව තෝරන්න / மொழியை தேர்ந்தெடுங்கள் / Select Language</label>
+                <div class="langbtn">
+                    <button class="btn">සිංහල</button>
+                    <button class="btn">தமிழ்</button>
+                    <button class="btn" onclick=location.href="scanid.html">English</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom bar -->
+        <div class="bottombar">
+            <button class="bottombtn"><i class="fa fa-question-circle-o"></i> උදව්/உதவி/Help</button>
+
+        <!-- script -->        
+        <script>
+            var myVar;
+            
+            function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+            }
+            
+            function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+    </body>
+</html>
